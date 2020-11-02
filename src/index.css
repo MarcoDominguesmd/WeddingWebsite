@@ -1,0 +1,406 @@
+@font-face{
+  font-family: amatic;
+  src: url(items/AmaticSC-Bold.ttf)
+}
+
+@font-face{
+  font-family: cond;
+  src: url(items/OpenSansCondensed-Light.ttf);
+}
+
+@font-face{
+  font-family: craftylover;
+  src: url(items/Craftylover.ttf);
+}
+
+body {
+  margin: 0;
+  font-family: cond;
+  font-size: large;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-image: url("items/leafs.png");*/
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-image: linear-gradient(180deg,rgb(219, 219, 219), white );
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a, ul, li{
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+textarea, input{
+  font-family: arial;
+}
+
+.clearfix::after,
+section::after,
+footer::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.App{
+  width: 70%;
+  margin: auto;
+  background-color: white;
+  text-align: center;
+  padding-top: 2vh;
+}
+
+.hide{
+  display: none;
+}
+
+
+
+/* Nav Bar */
+.menu-opt{
+  text-transform: uppercase;
+  font-family: amatic;
+  font-size: x-large;
+  font-weight: 800;
+}
+
+#logo{
+  font-size: 3em;
+  margin: 5px, auto;
+  font-family: craftylover;
+  background-image: url("items/Logo.png");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+  padding: 3vh 0;
+}
+
+.nav-opt{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  margin: 3vh 0;
+}
+#welcome{
+  grid-column: 1 / 2;
+  align-self: center;
+}
+#story{
+  grid-column: 2 / 3;
+  align-self: center;
+}
+#rsvp{
+  grid-column: 3 / 4;
+  align-self: center;
+}
+#whenwhere{
+  grid-column: 4 / 5;
+  align-self: center;
+}
+#qa{
+  grid-column: 5 / 6;
+  align-self: center;
+}
+
+
+/* Main page */
+
+.grey-font{
+  color: rgb(134, 134, 134);
+  font-size: .8em;
+  letter-spacing: .3em;
+  font-weight: 200;
+}
+
+#back-img{
+  width: 70%;
+}
+
+#welcome-website{
+  font-family: craftylover;
+  font-size: 2.6em;
+  margin-bottom: 0;
+}
+
+#rsvbtn{
+  margin: 5vh auto;
+  padding: 1vh 4vw;
+  font-family: cond;
+  letter-spacing: .5em;
+  font-weight: 800;
+  background-color: white;
+}
+
+#locationTag{
+  font-family: craftylover;
+  font-weight: 100;
+  font-size: 2em;
+}
+
+#mainSection{
+  margin:5vh 15vw;
+  padding-bottom: 10vh;
+}
+
+#leave-pic{
+  margin: 0 auto;
+  background-image: url("items/leave.png") ;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 10vw;
+  height: 5vw;
+}
+
+
+
+/* Info Page */
+#infosub{
+  margin-top: 35px;
+  margin-bottom: 0;
+}
+
+#infoloc{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#venueimg{
+  width: 70%;
+  max-width: 600px;
+  display: block;
+  margin: 20px auto 10px;
+}
+
+#maps{
+  max-width: 70%;
+  margin:0 auto 10vh;
+  display: block;
+}
+
+
+
+
+/* Reservation form */
+.formfield{
+  width: 28vw;
+  margin-top: 1vh;
+  margin-bottom: 2.5vh;
+  padding: 1vh 1vw 1vh 1vw;
+}
+.formname{
+  width: 12vw
+}
+
+#formheader{
+  margin-top: 8vh;
+  text-transform: uppercase;
+}
+
+#formp{
+  font-size: medium;
+  margin-bottom: 5vh;
+}
+
+#fname{
+  margin-right: 1.5vw;
+}
+
+#rsvform{
+    text-align: left;
+    margin-left: 20vw;
+}
+
+#formbtn{
+  background-color: white;
+  font-family: cond;
+  font-weight: 800;
+  letter-spacing: .5em;
+  text-transform: uppercase;
+  margin: 5vh 8vw;
+  padding: 1vh 5vw;
+  cursor: pointer;
+}
+
+#message{
+  height: 8vh
+}
+
+.successMessage{
+  position: fixed;
+  background-color: rgb(247, 247, 247);
+  box-shadow: 0px 0px 50px 1000px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  top: 20vh;
+  left:33vw;
+  height: 60vh;
+  width: 33vw;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+
+/* story */
+.pstory{
+  text-align: justify;
+}
+
+#picStory{
+  width: 100%;
+}
+
+#storydiv{
+  margin:5vh 15vw;
+  padding-bottom: 10vh;
+}
+
+
+
+
+/* GuestList */
+.table{
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr 2fr 3fr 3fr;
+  grid-gap:10px;
+  text-align: left;
+  border: 1px solid rgba(151, 151, 151, 0.8);
+}
+
+/* Question and Answer QA */
+#qaContainer{
+  padding: 5vh 15vw 10vh 15vw;
+}
+
+
+.subtitles{
+  font-family: craftylover;
+  font-weight: 200;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.big{
+  font-size: 2.2em;
+}
+
+
+/* media Query*/
+
+@media only screen and (max-width: 1100px) {
+  .App{
+    width: 90%;
+    margin: auto;
+  }
+  .formfield{
+    width: 48vw;
+    margin-top: 1vh;
+    margin-bottom: 2.5vh;
+    padding: 1vh 1vw 1vh 1vw;
+  }
+  .formname{
+    width: 22vw
+  }
+  #formbtn{
+    margin-left: 17vw; ;
+  }
+  .successMessage{
+    left:15vw;
+    width: 70vw;
+  }
+  #logo{
+    background-size: 70%;
+  }
+}
+
+
+@media(max-width: 760px){
+  .App{
+    width: 100%;
+  }
+  .drop-down{
+    margin: 3vh 7vw;
+  }
+  #rsvbtn{
+    padding: 1vh 7vw;
+  }
+  #formbtn{
+    padding: 1vh 7vw;
+    margin-left: 10vw;
+  }
+}
+
+
+@media(max-width: 700px){
+  #drop-down{
+    display: none;
+  }
+  
+  .menubtn{
+    font-size: 1.2em;
+    display: block;
+    font-weight: 1000;
+    padding: .5em;
+    margin: 0 auto;
+    width: 5em;
+    cursor: pointer;
+  }
+
+  #welcome-website{
+    font-size: 2em;
+  }
+
+  .menubtn::after, .menubtn::before{
+    content: "";
+    width: 3em;
+    margin: auto;
+    display: block;
+    border-bottom: 0.1em solid black;
+    margin-bottom: 0.2em;
+  }
+  .nav-opt{
+    margin: 3vh 7vw;
+    display: none;
+  }
+  .menu-opt{
+    margin: 1vh 0;
+  }
+  .show{
+    display: block;
+  }
+  #logo{
+    font-size: 2.3em;
+  }
+}
+
+
+@media(max-width: 500px){
+  body{
+    font-size: small;
+  }
+  .formfield{
+    width: 70vw;
+    margin-top: 1vh;
+    margin-bottom: 2.5vh;
+    padding: 1vh 1vw 1vh 1vw;
+  }
+  .formname{
+    width: 33vw
+  }
+  #rsvform{
+    margin-left: 15vw;
+  }
+  #formbtn{
+    margin-bottom: 10vh;
+    margin-left: 20vw;
+    background-color: white;
+  }
+
+}
